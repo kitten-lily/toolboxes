@@ -9,7 +9,7 @@ Environment=SHELL=%s
 Environment=HOME=%h
 Environment=container=podman
 Exec=--verbose --name %u --user %U --group %G --home %h --init "0" --nvidia "1" -- " "
-Image=ghcr.io/ublue-os/bluefin-dx-cli:latest
+Image=ghcr.io/kitten-lily/bluefin-dx-cli:latest
 HostName=bluefin-dx.%l
 Label=manager=distrobox
 Network=host
