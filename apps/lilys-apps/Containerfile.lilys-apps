@@ -1,0 +1,6 @@
+FROM registry.fedoraproject.org/fedora-toolbox:40
+
+COPY --chmod=755 ./apps/lilys-apps/build.sh /tmp/build.sh
+
+RUN /tmp/build.sh && \
+    rm -rf /tmp/*
